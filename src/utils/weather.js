@@ -21,7 +21,7 @@ request ({
                 callback(undefined, {
                     summary : 'It is '+ body.current.weather_descriptions[0]+', and the temperature is '+
                     body.current.temperature + ' and it feels like ' +
-                    body.current.feelslike
+                    body.current.feelslike + '. { Data recorded at '+ body.location.name + '@' + body.location.localtime +' }'
                 })
         }
     }
